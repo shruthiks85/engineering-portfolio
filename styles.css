@@ -200,7 +200,7 @@ section {
   color: var(--text);
   letter-spacing: -0.015em;
   margin-bottom: 3rem;
-  max-width: 540px;
+  max-width: 100%;
   line-height: 1.25;
 }
 
@@ -377,7 +377,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0;
-  max-width: 760px;
+  /*max-width: 760px;*/
+  max-width: 100%;
 }
 
 .principle-row {
@@ -392,7 +393,9 @@ section {
 .principle-row:first-child {
   border-top: 1px solid var(--border);
 }
-
+.principle-row:last-child {
+  border-bottom: none;
+}
 .principle-key {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.72rem;

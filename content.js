@@ -49,17 +49,23 @@ window.portfolioContent = {
           description: 'ATO authorisation, export classification controls, audit-ready documentation. High-consequence environments don\'t change the work — they sharpen it.',
           tag: 'compliance-ready'
         },
-        {
+        /*{
           number: '05',
-          title: 'AI-forward, not AI-reckless',
-          description: 'Led GitHub Copilot adoption across engineering teams — establishing responsible AI guidelines, measuring delivery impact, and building practices that improve speed without losing engineering craft.',
+          title: 'AI-forward, responsible adoption',
+          description: 'AI adoption practices that combine developer acceleration with human expertise, ensuring speed, quality, and sustainable engineering practices',
           tag: 'responsible AI'
+        },*/
+        {
+            number: '05',
+            title: 'Evolving with Technology, leading Through Change',
+            description: 'Navigated multiple waves of technology evolution — enterprise modernization, cloud adoption to today\'s AI transformation — turning emerging capabilities into practical engineering outcomes',
+            tag: 'technology leadership'
         },
         {
           number: '06',
-          title: 'People first, metrics second',
-          description: 'Structured development conversations, stretch assignments, and genuine career investment. The attrition number (15% → under 5%) is the output, not the goal. The goal is a team that wants to stay because the work is worth doing.',
-          tag: 'team development'
+            title: 'Build People, metrics will follow',
+            description: 'Created an environment where engineers had clear growth paths, challenging work, and regular coaching. Lower attrition was a consequence of investing in people — not the objective',
+            tag: 'team development'
         }
       ]
     },
@@ -95,7 +101,7 @@ window.portfolioContent = {
     },
     principles: {
       label: 'What I believe',
-      title: 'Earned through 18 years, not borrowed from a framework',
+      title: 'Earned through 18 years, across projects, products, programs, teams and deliveries; not borrowed from a framework',
       items: [
         {
           key: 'on quality',
@@ -115,7 +121,8 @@ window.portfolioContent = {
         },
         {
           key: 'on AI',
-          value: 'AI changes how software is built, not why engineering leadership matters. <strong>Adoption without dependency, speed without losing craft</strong> — these are leadership questions, not technology ones.'
+          value: 'AI is changing how software is built, but not what great engineering requires. The challenge isn\'t adopting AI — <strong>it\'s adopting it with judgment, accountability, and engineering discipline.</strong>',
+          tag: 'responsible AI'
         }
       ]
     },
@@ -139,20 +146,20 @@ window.portfolioContent = {
     },
     word: {
       label: 'In their words',
-      title: 'What people said about leadership',
+      title: 'What my teams and peers said about my work',
       description: 'Combined from farewell messages and recommendations, these are the qualities that came up most often.'
     },
     contact: {
       label: 'Contact',
       title: 'Let\'s talk about the work',
       intro: [
-        'Based in the Netherlands. Open to senior engineering leadership roles in defence, aerospace, enterprise software and high-stakes programme delivery.',
+        'Based in the Netherlands. Open to senior engineering leadership roles where I can bring my experience in building high-performing teams, delivering complex technology programmes, and leading engineering organisations through growth and transformation.',
         'Also happy to talk to peers — engineering culture, AI adoption, leadership at scale, building teams in new markets. These are conversations worth having.'
       ],
-      skills: ['Java', 'JavaScript', '.NET/Xamarin', 'AWS', 'Azure', 'SAFe', 'DevOps', 'GitHub Copilot'],
+      skills: ['Java', 'JavaScript', '.NET/Xamarin', 'ReactJS' ,'Angular' ,'AWS', 'Azure', 'SAFe', 'DevOps', 'GitHub Copilot', 'Claude'],
       links: [
-        { label: 'LinkedIn', value: 'linkedin.com/in/[your-handle]', href: 'https://linkedin.com/in/[your-handle]' },
-        { label: 'Email', value: '[your-email]', href: 'mailto:[your-email]' }
+        { label: 'LinkedIn', value: 'https://www.linkedin.com/in/shruthi-sridhara-02396010/', href: 'https://www.linkedin.com/in/shruthi-sridhara-02396010/' },
+        { label: 'Email', value: 'shruthiks85@gmail.com', href: 'mailto:shruthiks85@gmail.com' }
       ]
     }
   },
