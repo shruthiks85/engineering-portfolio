@@ -5,7 +5,7 @@ window.portfolioContent = {
     { label: 'How I work', href: '#how' },
     { label: 'Work', href: '#work' },
     { label: 'Principles', href: '#principles' },
-    { label: 'Thinking', href: '#thinking' },
+    { label: 'Focus', href: '#thinking' },
     { label: 'In their words', href: '#word' },
     { label: 'Contact', href: '#contact' }
   ],
@@ -76,7 +76,7 @@ window.portfolioContent = {
         {
           org: 'Collins Aerospace',
           period: 'Jul 2023 – Oct 2025',
-          domain: 'Aerospace Manufacturing<br>MES · Digital Transformation<br>Regulated Environment',
+          domain: 'Aerospace Manufacturing<br>MES · Digital Transformation<br>Regulated Environment<br>Global Programme',
           title: 'First-ever global MES implementation — built from the ground up',
           description: 'Led delivery of a $50M paper-to-digital programme with no prior MES foundation at site. Partnered with iBaseT (MES ISV) on Solumina platform integration, designed end-to-end execution, coordinated across engineering, manufacturing operations and IT infrastructure under ATO and export compliance requirements.',
           result: '→ 30% efficiency gain · global delivery model · US, Europe, Asia'
@@ -85,8 +85,8 @@ window.portfolioContent = {
           org: 'Collins Aerospace',
           period: 'Jan 2021 – Jul 2023',
           domain: 'Cloud Platform<br>AWS · Azure<br>Post-merger',
-          title: 'Cloud scaling for an organisation that doubled overnight',
-          description: 'Drove AWS and Azure platform scaling supporting post-merger growth from 40,000 to 80,000 employees. Coordinated across architecture, infrastructure and business teams to deliver a unified platform. Ran parallel team upskilling programme to build internal capability and reduce external hiring dependency.',
+          title: 'Platform scaling for an organisation that doubled in size',
+          description: 'Drove platform consolidation, AWS and Azure migration supporting post-merger growth from 40,000 to 80,000 employees. Coordinated across architecture, infrastructure and business teams to deliver a unified platform. Ran parallel team upskilling programme to build internal capability and reduce external hiring dependency.',
           result: '→ Unified infrastructure live day one · new workstreams opened internally'
         },
         {
@@ -101,14 +101,14 @@ window.portfolioContent = {
     },
     principles: {
       label: 'What I believe',
-      title: 'Earned through 18 years, across projects, products, programs, teams and deliveries; not borrowed from a framework',
+      title: 'Lessons learned through 18 years, across projects, products, programs, teams, challenges and deliveries',
       items: [
         {
           key: 'on quality',
           value: '<strong>Quality doesn\'t slip under delivery pressure.</strong> It slips when there\'s no structure to protect it. Build the structure before the pressure arrives.'
         },
         {
-          key: 'on safety',
+          key: 'on culture',
           value: 'Engineers grow when they feel safe to take risks, not when they\'re told to. <strong>Psychological safety is an engineering output</strong> — it shows up in how early risks get raised and whether people speak up when something is wrong.'
         },
         {
@@ -127,27 +127,27 @@ window.portfolioContent = {
       ]
     },
     thinking: {
-      label: 'Thinking',
-      title: 'Writing it down',
+      label: 'Current Focus',
+      title: 'What I am building, learning and exploring right now',
       items: [
         {
-          tag: '// engineering_leadership · AI',
-          title: 'AI adoption is a leadership problem, not a technology problem',
-          description: 'When we introduced GitHub Copilot at Collins, the hardest part wasn\'t the tooling. How do you adopt AI without creating dependency or weakening core engineering skills? I\'ve worked through this hands-on.',
-          status: 'status: drafting'
+          tag: '// engineering_leadership · AI · continuous_learning',
+          title: 'Building AI systems to lead AI-enabled teams',
+          description: 'I\'m building a local AI knowledge assistant from first principles — not to create another chatbot, but to understand the engineering decisions behind retrieval, AI-assisted development and production-ready AI systems. Every milestone becomes both a technical exercise and an engineering leadership lesson that helps shape my approach to leading AI adoption.',
+          status: 'status: in progress'
         },
         {
-          tag: '// engineering_culture',
-          title: 'What attrition actually tells you about an engineering team',
-          description: 'A 15% attrition rate looks like a retention problem. It\'s usually a culture problem dressed as one. I reduced attrition from ~15% to under 5% in two years — not by improving benefits.',
-          status: 'status: drafting'
+          tag: '// dutch_language · cultural_integration',
+          title: 'Learning the language is part of joining the culture',
+          description: 'Relocating to the Netherlands isn’t just a career move for me. I’m actively learning Dutch and investing time in understanding the culture, because building trust and leading teams starts with understanding the people you work with.',
+          status: 'status: A2 -> B1 in progress'
         }
       ]
     },
     word: {
       label: 'In their words',
       title: 'What my teams and peers said about my work',
-      description: 'Combined from farewell messages and recommendations, these are the qualities that came up most often.'
+      description: 'Combined from farewell messages (last role) and recommendations(over the years), these are the qualities that came up most often.'
     },
     contact: {
       label: 'Contact',

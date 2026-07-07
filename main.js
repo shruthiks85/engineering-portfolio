@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ${content.sections.thinking.items.map(item => `
             <article class="writing-card">
               <div class="writing-card-tag">${item.tag}</div>
-              <h3>${item.title}</h3>
+              <h3>${item.title}</h3>    
               <p>${item.description}</p>
               <div class="status">${item.status}</div>
             </article>
