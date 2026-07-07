@@ -1,90 +1,72 @@
-
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:auto;overflow:hidden;background:#0F1117}
-.wrap{background:#0F1117;padding:2.5rem 2rem;font-family:'IBM Plex Mono',monospace;min-height:auto}
-.top-bar{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem}
-.cloud-label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#4ADE80;display:flex;align-items:center;gap:.5rem}
-.cloud-label::before{content:'//';color:#555D73}
-.sources{display:flex;gap:1.5rem}
-.src{display:flex;align-items:center;gap:.4rem;font-size:10px;color:#555D73}
-.src-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.cloud-sub{font-size:11px;color:#555D73;margin-bottom:1.5rem;font-family:'IBM Plex Sans',sans-serif;line-height:1.5}
-svg{width:100%;display:block}
-@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-.w{animation:rise .5s ease forwards;opacity:0;cursor:default}
-.w:hover{filter:brightness(1.3)}
-</style>
-<div class="wrap">
-  <div class="top-bar">
-    <!--<div class="cloud-label">In their words</div>-->
-    <div class="sources">
-      <div class="src"><div class="src-dot" style="background:#4ADE80"></div>leadership qualities</div>
-      <div class="src"><div class="src-dot" style="background:#60A5FA"></div>strategic qualities</div>
-      <div class="src"><div class="src-dot" style="background:#A78BFA"></div>personal qualities</div>
-      <div class="src"><div class="src-dot" style="background:#3A6B52"></div>impact</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Their Words</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="word-cloud-page">
+  <div class="word-cloud-wrap">
+    <div class="word-cloud-top-bar">
+      <div class="word-cloud-source-list">
+        <div class="word-cloud-source"><span class="word-cloud-source-dot" style="background:#4ADE80"></span>leadership qualities</div>
+        <div class="word-cloud-source"><span class="word-cloud-source-dot" style="background:#60A5FA"></span>strategic qualities</div>
+        <div class="word-cloud-source"><span class="word-cloud-source-dot" style="background:#A78BFA"></span>personal qualities</div>
+        <div class="word-cloud-source"><span class="word-cloud-source-dot" style="background:#3A6B52"></span>impact</div>
+      </div>
     </div>
+
+    <svg class="word-cloud-svg" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+      <text class="word-cloud-word" style="animation-delay:.05s" x="350" y="90" font-family="IBM Plex Sans" font-size="46" font-weight="700" fill="#4ADE80" text-anchor="middle">calm</text>
+      <text class="word-cloud-word" style="animation-delay:.1s" x="185" y="145" font-family="IBM Plex Sans" font-size="36" font-weight="700" fill="#4ADE80" text-anchor="middle">approachable</text>
+      <text class="word-cloud-word" style="animation-delay:.15s" x="520" y="145" font-family="IBM Plex Sans" font-size="32" font-weight="600" fill="#60A5FA" text-anchor="middle">bridges the gap</text>
+
+      <text class="word-cloud-word" style="animation-delay:.18s" x="90" y="200" font-family="IBM Plex Sans" font-size="26" font-weight="600" fill="#A78BFA" text-anchor="middle">inspiring</text>
+      <text class="word-cloud-word" style="animation-delay:.21s" x="280" y="190" font-family="IBM Plex Sans" font-size="28" font-weight="600" fill="#60A5FA" text-anchor="middle">composed</text>
+      <text class="word-cloud-word" style="animation-delay:.24s" x="460" y="195" font-family="IBM Plex Sans" font-size="24" font-weight="600" fill="#4ADE80" text-anchor="middle">mentor first</text>
+      <text class="word-cloud-word" style="animation-delay:.27s" x="615" y="200" font-family="IBM Plex Sans" font-size="22" font-weight="500" fill="#60A5FA" text-anchor="middle">ownership</text>
+
+      <text class="word-cloud-word" style="animation-delay:.30s" x="65" y="248" font-family="IBM Plex Sans" font-size="20" font-weight="500" fill="#60A5FA" text-anchor="middle">strategic</text>
+      <text class="word-cloud-word" style="animation-delay:.33s" x="195" y="240" font-family="IBM Plex Sans" font-size="22" font-weight="500" fill="#A78BFA" text-anchor="middle">people-first</text>
+      <text class="word-cloud-word" style="animation-delay:.35s" x="360" y="238" font-family="IBM Plex Sans" font-size="20" font-weight="500" fill="#4ADE80" text-anchor="middle">leads by example</text>
+      <text class="word-cloud-word" style="animation-delay:.37s" x="530" y="240" font-family="IBM Plex Sans" font-size="19" font-weight="500" fill="#A78BFA" text-anchor="middle">patient</text>
+      <text class="word-cloud-word" style="animation-delay:.39s" x="638" y="248" font-family="IBM Plex Sans" font-size="17" font-weight="400" fill="#3A6B52" text-anchor="middle">zero attrition</text>
+
+      <text class="word-cloud-word" style="animation-delay:.41s" x="55" y="290" font-family="IBM Plex Sans" font-size="16" font-weight="400" fill="#3A6B52" text-anchor="middle">lasting impact</text>
+      <text class="word-cloud-word" style="animation-delay:.43s" x="180" y="282" font-family="IBM Plex Sans" font-size="18" font-weight="400" fill="#60A5FA" text-anchor="middle">delivery mindset</text>
+      <text class="word-cloud-word" style="animation-delay:.45s" x="330" y="278" font-family="IBM Plex Sans" font-size="17" font-weight="400" fill="#A78BFA" text-anchor="middle">empathetic</text>
+      <text class="word-cloud-word" style="animation-delay:.47s" x="475" y="282" font-family="IBM Plex Sans" font-size="18" font-weight="400" fill="#60A5FA" text-anchor="middle">strategy to execution</text>
+      <text class="word-cloud-word" style="animation-delay:.49s" x="628" y="290" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#4ADE80" text-anchor="middle">trusted her team</text>
+
+      <text class="word-cloud-word" style="animation-delay:.51s" x="80" y="326" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#A78BFA" text-anchor="middle">kind</text>
+      <text class="word-cloud-word" style="animation-delay:.53s" x="210" y="318" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#4ADE80" text-anchor="middle">culture of learning</text>
+      <text class="word-cloud-word" style="animation-delay:.55s" x="360" y="316" font-family="IBM Plex Sans" font-size="16" font-weight="400" fill="#60A5FA" text-anchor="middle">clear accountability</text>
+      <text class="word-cloud-word" style="animation-delay:.57s" x="505" y="318" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#A78BFA" text-anchor="middle">positive</text>
+      <text class="word-cloud-word" style="animation-delay:.59s" x="622" y="326" font-family="IBM Plex Sans" font-size="14" font-weight="400" fill="#3A6B52" text-anchor="middle">irreplaceable</text>
+
+      <text class="word-cloud-word" style="animation-delay:.61s" x="70" y="358" font-family="IBM Plex Sans" font-size="13" font-weight="300" fill="#355A4A" text-anchor="middle">conflict resolution</text>
+      <text class="word-cloud-word" style="animation-delay:.63s" x="210" y="350" font-family="IBM Plex Sans" font-size="14" font-weight="300" fill="#7FB2FF" text-anchor="middle">attention to detail</text>
+      <text class="word-cloud-word" style="animation-delay:.65s" x="345" y="350" font-family="IBM Plex Sans" font-size="14" font-weight="300" fill="#7BE18A" text-anchor="middle">empowers teams</text>
+      <text class="word-cloud-word" style="animation-delay:.67s" x="480" y="350" font-family="IBM Plex Sans" font-size="13" font-weight="300" fill="#C2A7FF" text-anchor="middle">never missed a deadline</text>
+      <text class="word-cloud-word" style="animation-delay:.69s" x="615" y="358" font-family="IBM Plex Sans" font-size="13" font-weight="300" fill="#4F7A66" text-anchor="middle">shadow leader</text>
+
+      <text class="word-cloud-word" style="animation-delay:.71s" x="90" y="390" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#4E6A7A" text-anchor="middle">always there</text>
+      <text class="word-cloud-word" style="animation-delay:.73s" x="230" y="384" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B7B5A" text-anchor="middle">visionary thinking</text>
+      <text class="word-cloud-word" style="animation-delay:.75s" x="360" y="385" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B6A80" text-anchor="middle">exceptional communicator</text>
+      <text class="word-cloud-word" style="animation-delay:.77s" x="495" y="384" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B7B5A" text-anchor="middle">warmth</text>
+      <text class="word-cloud-word" style="animation-delay:.79s" x="617" y="390" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B6A80" text-anchor="middle">cheering everyone on</text>
+
+      <text class="word-cloud-word" style="animation-delay:.81s" x="140" y="418" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#304A39" text-anchor="middle">gave importance to wellbeing</text>
+      <text class="word-cloud-word" style="animation-delay:.83s" x="300" y="420" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#3A4D64" text-anchor="middle">nobody saw her in a bad mood</text>
+      <text class="word-cloud-word" style="animation-delay:.85s" x="460" y="418" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#304A39" text-anchor="middle">encouragement a true gift</text>
+      <text class="word-cloud-word" style="animation-delay:.87s" x="600" y="420" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#3A4D64" text-anchor="middle">redefined what a manager is</text>
+
+      <text class="word-cloud-word" style="animation-delay:.89s" x="200" y="448" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#2D3F35" text-anchor="middle">deeply missed</text>
+      <text class="word-cloud-word" style="animation-delay:.91s" x="360" y="452" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#2D3A4A" text-anchor="middle">women hero leader · women hero · inspiration</text>
+      <text class="word-cloud-word" style="animation-delay:.93s" x="550" y="448" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#2D3F35" text-anchor="middle">brought positivity to the org</text>
+    </svg>
   </div>
-  <!--<div class="cloud-sub">Combined from farewell messages (35 engineers) and LinkedIn recommendations (10 peers, managers &amp; direct reports) — unprompted, in their own words.</div>-->
-  <svg viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
-
-    <!-- TIER 1 — highest frequency, dead centre, largest -->
-    <text class="w" style="animation-delay:.05s" x="350" y="90"  font-family="IBM Plex Sans" font-size="46" font-weight="700" fill="#4ADE80" text-anchor="middle">calm</text>
-    <text class="w" style="animation-delay:.1s"  x="185" y="145" font-family="IBM Plex Sans" font-size="36" font-weight="700" fill="#4ADE80" text-anchor="middle">approachable</text>
-    <text class="w" style="animation-delay:.15s" x="520" y="145" font-family="IBM Plex Sans" font-size="32" font-weight="600" fill="#60A5FA" text-anchor="middle">bridges the gap</text>
-
-    <!-- TIER 2 -->
-    <text class="w" style="animation-delay:.18s" x="90"  y="200" font-family="IBM Plex Sans" font-size="26" font-weight="600" fill="#A78BFA" text-anchor="middle">inspiring</text>
-    <text class="w" style="animation-delay:.21s" x="280" y="190" font-family="IBM Plex Sans" font-size="28" font-weight="600" fill="#60A5FA" text-anchor="middle">composed</text>
-    <text class="w" style="animation-delay:.24s" x="460" y="195" font-family="IBM Plex Sans" font-size="24" font-weight="600" fill="#4ADE80" text-anchor="middle">mentor first</text>
-    <text class="w" style="animation-delay:.27s" x="615" y="200" font-family="IBM Plex Sans" font-size="22" font-weight="500" fill="#60A5FA" text-anchor="middle">ownership</text>
-
-    <!-- TIER 3 -->
-    <text class="w" style="animation-delay:.30s" x="65"  y="248" font-family="IBM Plex Sans" font-size="20" font-weight="500" fill="#60A5FA" text-anchor="middle">strategic</text>
-    <text class="w" style="animation-delay:.33s" x="195" y="240" font-family="IBM Plex Sans" font-size="22" font-weight="500" fill="#A78BFA" text-anchor="middle">people-first</text>
-    <text class="w" style="animation-delay:.35s" x="360" y="238" font-family="IBM Plex Sans" font-size="20" font-weight="500" fill="#4ADE80" text-anchor="middle">leads by example</text>
-    <text class="w" style="animation-delay:.37s" x="530" y="240" font-family="IBM Plex Sans" font-size="19" font-weight="500" fill="#A78BFA" text-anchor="middle">patient</text>
-    <text class="w" style="animation-delay:.39s" x="638" y="248" font-family="IBM Plex Sans" font-size="17" font-weight="400" fill="#3A6B52" text-anchor="middle">zero attrition</text>
-
-    <!-- TIER 4 -->
-    <text class="w" style="animation-delay:.41s" x="55"  y="290" font-family="IBM Plex Sans" font-size="16" font-weight="400" fill="#3A6B52" text-anchor="middle">lasting impact</text>
-    <text class="w" style="animation-delay:.43s" x="180" y="282" font-family="IBM Plex Sans" font-size="18" font-weight="400" fill="#60A5FA" text-anchor="middle">delivery mindset</text>
-    <text class="w" style="animation-delay:.45s" x="330" y="278" font-family="IBM Plex Sans" font-size="17" font-weight="400" fill="#A78BFA" text-anchor="middle">empathetic</text>
-    <text class="w" style="animation-delay:.47s" x="475" y="282" font-family="IBM Plex Sans" font-size="18" font-weight="400" fill="#60A5FA" text-anchor="middle">strategy to execution</text>
-    <text class="w" style="animation-delay:.49s" x="628" y="290" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#4ADE80" text-anchor="middle">trusted her team</text>
-
-    <!-- TIER 5 -->
-    <text class="w" style="animation-delay:.51s" x="80"  y="326" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#A78BFA" text-anchor="middle">kind</text>
-    <text class="w" style="animation-delay:.53s" x="210" y="318" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#4ADE80" text-anchor="middle">culture of learning</text>
-    <text class="w" style="animation-delay:.55s" x="360" y="316" font-family="IBM Plex Sans" font-size="16" font-weight="400" fill="#60A5FA" text-anchor="middle">clear accountability</text>
-    <text class="w" style="animation-delay:.57s" x="505" y="318" font-family="IBM Plex Sans" font-size="15" font-weight="400" fill="#A78BFA" text-anchor="middle">positive</text>
-    <text class="w" style="animation-delay:.59s" x="622" y="326" font-family="IBM Plex Sans" font-size="14" font-weight="400" fill="#3A6B52" text-anchor="middle">irreplaceable</text>
-
-    <!-- TIER 6 -->
-    <text class="w" style="animation-delay:.61s" x="70"  y="358" font-family="IBM Plex Sans" font-size="13" font-weight="300" fill="#355A4A" text-anchor="middle">conflict resolution</text>
-    <text class="w" style="animation-delay:.63s" x="210" y="350" font-family="IBM Plex Sans" font-size="14" font-weight="300" fill="#7FB2FF" text-anchor="middle">attention to detail</text>
-    <text class="w" style="animation-delay:.65s" x="345" y="350" font-family="IBM Plex Sans" font-size="14" font-weight="300" fill="#7BE18A" text-anchor="middle">empowers teams</text>
-    <text class="w" style="animation-delay:.67s" x="480" y="350" font-family="IBM Plex Sans" font-size="13" font-weight="300" fill="#C2A7FF" text-anchor="middle">never missed a deadline</text>
-    <text class="w" style="animation-delay:.69s" x="615" y="358" font-family="IBM Plex Sans" font-size="13" font-weight="300" fill="#4F7A66" text-anchor="middle">shadow leader</text>
-
-    <!-- TIER 7 -->
-    <text class="w" style="animation-delay:.71s" x="90"  y="390" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#4E6A7A" text-anchor="middle" style="fill:#4E6A7A">always there</text>
-    <text class="w" style="animation-delay:.73s" x="230" y="384" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B7B5A" text-anchor="middle">visionary thinking</text>
-    <text class="w" style="animation-delay:.75s" x="360" y="385" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B6A80" text-anchor="middle">exceptional communicator</text>
-    <text class="w" style="animation-delay:.77s" x="495" y="384" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B7B5A" text-anchor="middle">warmth</text>
-    <text class="w" style="animation-delay:.79s" x="617" y="390" font-family="IBM Plex Sans" font-size="12" font-weight="300" fill="#5B6A80" text-anchor="middle">cheering everyone on</text>
-
-    <!-- TIER 8 — whisper layer -->
-    <text class="w" style="animation-delay:.81s" x="140" y="418" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#304A39" text-anchor="middle">gave importance to wellbeing</text>
-    <text class="w" style="animation-delay:.83s" x="300" y="420" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#3A4D64" text-anchor="middle">nobody saw her in a bad mood</text>
-    <text class="w" style="animation-delay:.85s" x="460" y="418" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#304A39" text-anchor="middle">encouragement a true gift</text>
-    <text class="w" style="animation-delay:.87s" x="600" y="420" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#3A4D64" text-anchor="middle">redefined what a manager is</text>
-
-    <!-- very bottom — near invisible, textural -->
-    <text class="w" style="animation-delay:.89s" x="200" y="448" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#2D3F35" text-anchor="middle">deeply missed</text>
-    <text class="w" style="animation-delay:.91s" x="360" y="452" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#2D3A4A" text-anchor="middle">women hero leader · women hero · inspiration</text>
-    <text class="w" style="animation-delay:.93s" x="550" y="448" font-family="IBM Plex Sans" font-size="11" font-weight="350" fill="#2D3F35" text-anchor="middle">brought positivity to the org</text>
-
-  </svg>
-</div>
+</body>
+</html>
